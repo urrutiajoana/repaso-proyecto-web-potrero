@@ -1,0 +1,203 @@
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(165, 11, 165);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    /* Forma 1 */
+    /* background-image: url("../images/covercon_sports_soccer_iconpattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* Forma 2 */
+    /* background: radial-gradient(100% 225% at 0% 0%, #DE3E3E 0%, #17115C 100%), radial-gradient(100% 225% at 100% 0%, #FF9040 0%, #FF0000 100%), linear-gradient(180deg, #CE63B7 0%, #ED6283 100%), radial-gradient(100% 120% at 75% 0%, #A74600 0%, #000000 100%), linear-gradient(310deg, #0063D8 0%, #16009A 50%);
+    background-blend-mode: overlay, color-dodge, color-burn, color-dodge, normal; */
+    /* Forma 3 */
+    /* background-color: #DFDBE5;
+    background-image: url("../images/i-like-food.svg"); */
+    /* Forma 4 */
+    /* background-image: url("../images/stacked-steps-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+a {
+    color: inherit;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+/* .titulo {
+    color: #f5b5cc;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: lowercase;
+} */
+
+.header {
+    /*     display: block; */
+    /* width: 100%; /* Porcentajes, Pixeles, Etc */ 
+    /*     height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    border: 10px solid yellow;
+    padding: 32px;
+    margin: 32px; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .main, .footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.footer {
+    height: 300px;
+    display: flex; /* Obligotario cuando queremos usar Flexbox, esto va en el padre directo para mover a los hijos */
+    flex-direction: row; /* Aplica el eje principal */
+    justify-content: center; /* Controla el eje principal dependiendo de flex-direction */
+    align-items: center; /* Controla el eje secundario dependiendo de flex-direction seria lo contrario */
+}
+
+.header__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header__titulo {
+    text-transform: uppercase;
+    text-align: center;
+    color: #e21d1d;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header__descripcion {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Seccion 1 */
+
+.seccion1 {
+    padding: 1rem;
+}
+
+.seccion1__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.seccion1__item {
+    background-image:url();
+    border-radius: 0.5rem;
+}
+
+.seccion1__enlace {
+    text-decoration: none;
+    background-color: #b80912;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: inherit;
+}
+
+/* Seccion 2 */
+
+.seccion2 {
+    padding: 1rem;
+}
+
+.seccion2__mapa {
+    /* width: 50%; */
+    height: 400px;
+}
+
+/* Seccion 3 */
+
+.seccion3 {
+    padding: 1rem;
+}
+
+.seccion3__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.seccion3__item {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion3__enlace {
+    color: #4eb910;
+    text-transform: uppercase;
+}
+
+/* Seccion 4 */
+
+.seccion4 {
+    padding: 1rem;
+}
+
+.seccion4__tequila {
+    display: block;
+    width: 100%;
+}
+
+/* Seccion 5 */
+
+.seccion5 {
+    padding: 2rem;
+}
+
+.seccion5__boton {
+    background-color: #9c13d3;
+    border-color: #f5b5cc;
+}
+
+.seccion5__boton:hover {
+    background-color: #231f20;
+}
+
+/* Medias Querys */
+
+@media (min-width: 768px) {
+    body  {
+       background-image: url(../images/descarga_fondo.jpeg);
+    }
+    .header_titulo {
+        font-size: 60 px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="images/yaco 3d taller foto.jpg" type="image/x-icon">
+    <!-- Hoja de estilos - Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Hoja de estilos - Propia -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/yaco 3d taller foto.jpg" alt="Yaco 3D Taller" width="200"
+            height="200">
+        <h1 class="header__titulo">Yaco 3D Taller</h1>
+        <p class="header__descripcion">Somos un emprendimiento de impresion 3D en Salta, Capital</p>
+    </header>
+    <main class="main">
+        <section class="seccion1">
+
+            <ul class="seccion1__lista">
+
+                <li class="seccion1__item">
+                    <a class="seccion1__enlace" href="index.html">Inicio</a>
+                </li>
+            </ul>
+        </section>
+        <section class="seccion5">
+            <h1 class="text-center">Contactanos</h1>
+            <form action="https://formspree.io/f/xeqbwnrg"method="POST">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="tipo">Tipo de consulta</label>
+                    <select name="tipo" id="tipo" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una opcion</option>
+                        <option value="Ayuda">Ayuda</option>
+                        <option value="Devolucion">Devolucion</option>
+                        <option value="Compra">Compra</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input name="terminos" type="checkbox" class="form-check-input" id="exampleCheck1" value="acepto">
+                    <label class="form-check-label" for="exampleCheck1">Aceptas los terminos y condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-primary seccion5__boton">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="images/diferencias-artillery-genius-pro-hornet.jpg" alt="artillery genius y hornet" width="500"
+            height="800">
+    </footer>
+
+    <!-- Hoja de javascript - Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
